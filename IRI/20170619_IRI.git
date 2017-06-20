@@ -81,12 +81,13 @@ git checkout -- [file]
 # if already committed
 git checkout [log num] [file]
 git checkout HEAD~[num] [file]
-
-# if wrongly checked out totally
+## if wrongly checked out totally
 git checkout HEAD~[num]
 # you can "revert" that step by
 git checkout master
 
+### you can look at what stage is github
+git fetch (origin master)
 
 
 
