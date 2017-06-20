@@ -42,7 +42,6 @@ git config --global core.editor subl
 git config --global push.default matching
 git config --global push.default simple
 
-
 ### clone repository
 git clone https://github.com/yhoang/rdm
 
@@ -88,6 +87,23 @@ git checkout master
 
 ### you can look at what stage is github
 git fetch (origin master)
+
+### if there was simultaneously work on one file
+# there will be error with git pull
+# resolve conflict with looking into file
+subl [file]
+# and choose what to delete
+# then add file again
+git add [file]
+git status
+git commit -m "chose A over B"
+git push
+
+
+
+
+
+
 
 
 
