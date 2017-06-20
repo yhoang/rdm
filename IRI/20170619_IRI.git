@@ -35,7 +35,6 @@ collaborate (see also: git help workflows)
 
 ### settings
 git config --global user.name "Yen Hoang"
-git config --global user.name "yhoang"
 git config --global user.email "office.yhoang@gmail.com"
 git config --global color.ui "auto"
 git config --global core.editor nano
@@ -54,6 +53,53 @@ git status
 ### commit and push
 git commit -m "text"
 git push
+
+### rename or move file
+git mv file file2
+
+### show log history
+git log
+# one log each line and show log number
+git log --oneline
+
+### ignore files
+echo "[filename]*" >> .gitignore
+git add .gitignore
+
+### show differences
+git diff [file]
+git diff [log num] [file]
+git diff HEAD~[num] [file]
+
+### show anything changed in log number
+git show [log num]
+git show HEAD~[num]
+
+### revert changes 
+# if not staged for commit yet
+git checkout -- [file]
+# if already committed
+git checkout [log num] [file]
+git checkout HEAD~[num] [file]
+
+# if wrongly checked out totally
+git checkout HEAD~[num]
+# you can "revert" that step by
+git checkout master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
