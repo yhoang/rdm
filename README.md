@@ -1,13 +1,7 @@
 # rdm
 
-small example scripts in different languages from different workshops
+Small example scripts in different languages from different workshops
 
-list:
-- a
-- b
-- c
-
-## mittag
-es gab heute:
-- kartoffel-gemüse-pfanne
-- salat mit olivenöl und balsamico
+- IRI workshop
+- PyLadies meet up
+- Advanced Training School for Big Data in Life Sciences
